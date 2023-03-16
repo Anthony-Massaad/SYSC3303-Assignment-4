@@ -2,15 +2,9 @@ package assignment4;
 
 public class State implements Context{
 
-    private State state; 
+    protected State state; 
 
-    public State(){
-        this(null);
-    }
-
-    public State(State state){
-        this.state = state; 
-    }
+    public State(){}
 
     public State getState(){
         return this.state; 
@@ -19,10 +13,6 @@ public class State implements Context{
     public void setState(State state){
         this.state = state; 
     }
-
-    public void nextState(){
-        this.state.nextState();
-    };
 
     @Override
     public State pedestrianWaiting() {
@@ -42,5 +32,6 @@ public class State implements Context{
 
     public static void main(String[] args) {
         State context = new State();
+        System.out.println("Hellow");
     }
 }
