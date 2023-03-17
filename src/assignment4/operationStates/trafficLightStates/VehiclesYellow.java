@@ -1,5 +1,7 @@
 package assignment4.operationStates.trafficLightStates;
 
-public class VehiclesYellow {
+import assignment4.VehiclesEnabled;
+
+public class VehiclesYellow extends VehiclesEnabled{
     
 }

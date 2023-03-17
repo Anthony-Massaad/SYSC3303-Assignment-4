@@ -4,8 +4,6 @@ public class State implements Context{
 
     protected State state; 
 
-    public State(){}
-
     public State getState(){
         return this.state; 
     }
@@ -16,12 +14,20 @@ public class State implements Context{
 
     @Override
     public State pedestrianWaiting() {
+    	System.out.println("ERROR");
         return this.state.pedestrianWaiting();
     }
 
     @Override
     public State timeout() {
+    	System.out.println("ERROR");
         return this.state.timeout(); 
+    }
+    
+    @Override
+    public void setTimer() {
+    	System.out.println("ERROR");
+    	this.state.setTimer(); 
     }
 
     public static State start(){
